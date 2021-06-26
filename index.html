@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Project</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 
+      Changing fonts 
+      Using jQuery library to change font styles
+      update the font styles with jQuery
+     -->
+
+    <header class="container">
+      <h1>Changing Fonts</h1>
+    </header>
+
+    <nav class="container center">
+      <button id="fontDec"><i class="fas fa-minus"></i></button>
+      <button id="fontInc"><i class="fas fa-plus"></i></button>
+      <button id="fontSpace"><i class="fas fa-text-width"></i></button>
+      <button id="fontFamily"><i class="fas fa-font"></i></button>
+      <select name="font" id="font" class="fontMenu">
+        <option value="Arial">Arial</option>
+        <option value="cursive">Cursive</option>
+        <option value="Verdana ">Verdana</option>
+        <option value="Tims New Roman">Times New Roman</option>
+        <option value="monospace">Monospace</option>
+        <option value="Impact ">Impact</option>
+        <option value="Comic Sans MS">Comic Sans MS</option>
+      </select>
+      <button id="fontColor"><i class="fas fa-brush"></i></button>
+      <select name="color" id="color" class="colorMenu">
+        <option value="#f4a261">Orange</option>
+        <option value="#04fc41">Green</option>
+        <option value="#0048fb">Blue</option>
+        <option value="#fb0000">Red</option>
+      </select>
+      <button id="fontReset"><i class="fas fa-redo"></i></button>
+      <button id="fontDelete"><i class="fas fa-trash-restore"></i></button>
+    </nav>
+
+    <div class="addText container">
+      <!-- User text here -->
+    </div>
+
+    <section class="container center">
+      <form action="#">
+        <textarea
+          name="text"
+          id="text"
+          cols="60"
+          rows="10"
+          placeholder="-- ✨ ENTER YOUR TEXT HERE, HIT SUBMIT, TRY BUTTONS 😊 --"
+        ></textarea>
+        <div class="submit">
+          <button>SUBMIT</i></button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="container">
+      Gichul Jaun, Created at
+      <a href="https://junocollege.com/" target="_blank">Juno College</a>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script-namespace.js"></script>
+  </body>
+</html>
